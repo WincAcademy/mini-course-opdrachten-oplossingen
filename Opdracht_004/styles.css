@@ -1,0 +1,20 @@
+body {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
+  background-color: lightcyan;
+}
+
+header,
+main,
+footer,
+nav {
+  border: 1px solid lightseagreen;
+  margin: 10px auto;
+  width: 80%;
+}
+
+nav {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 18px;
+}
