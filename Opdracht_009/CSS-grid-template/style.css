@@ -1,0 +1,37 @@
+.parent {
+  width: 100%;
+  height: 600px;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  margin: 10px;
+}
+
+header {
+  background-color: lightcoral;
+  grid-area: 1 / 1 / 3 / 6;
+}
+nav {
+  background-color: blueviolet;
+  grid-area: 3 / 1 / 4 / 6;
+}
+main {
+  background-color: lightblue;
+  grid-area: 4 / 1 / 7 / 4;
+}
+aside {
+  background-color: lightgreen;
+  grid-area: 4 / 4 / 7 / 6;
+}
+footer {
+  background-color: lavender;
+  grid-area: 7 / 1 / 8 / 8;
+}
