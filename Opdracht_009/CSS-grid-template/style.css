@@ -35,3 +35,29 @@ footer {
   background-color: lavender;
   grid-area: 7 / 1 / 8 / 8;
 }
+
+@media (max-width: 600px) {
+  header,
+  main,
+  aside,
+  footer,
+  nav {
+    background-color: darksalmon;
+  }
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  header {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+  nav {
+    grid-area: 2 / 1 / 2 / 1;
+  }
+  main {
+    grid-area: 3 / 1 / 5 / 1;
+  }
+  aside {
+    grid-area: 5 / 1 / 7 / 1;
+  }
+}
