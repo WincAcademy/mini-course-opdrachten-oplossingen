@@ -10,10 +10,17 @@ footer,
 nav {
   border: 1px solid lightseagreen;
   width: 80%;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 nav {
   background-color: lightseagreen;
   color: white;
   font-size: 18px;
+}
+
+ul li {
+  display: inline;
+  margin: 10px;
 }
