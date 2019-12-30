@@ -1,0 +1,55 @@
+body {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
+  background-color: lightcyan;
+}
+
+header,
+main,
+footer,
+nav {
+  border: 1px solid lightseagreen;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+nav {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 18px;
+}
+.navigation-links {
+  padding-left: 0;
+}
+
+.navigation-links li {
+  display: inline;
+  margin: 10px;
+}
+
+input,
+select,
+textarea {
+  line-height: 25px;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightsteelblue;
+    color: navy;
+    font-size: 26px;
+    line-height: 55px;
+  }
+
+  header,
+  main,
+  footer,
+  nav {
+    border: 1px solid lightslategrey;
+  }
+}
