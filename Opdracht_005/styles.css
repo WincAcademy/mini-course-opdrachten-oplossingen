@@ -8,10 +8,17 @@ header,
 main,
 footer,
 nav {
-  border: 1px solid lightseagreen;
   width: 80%;
+  /* centreer je header, main en nav met margin 10px auto, 
+  oftewel: top en bottom 10px, links en recht: automatisch opvullen met de ruimte die over is.
+  Werkt alleen als de elementen ook een width hebben. 
+  Anders weet de computer niet tov waarvan de resterende ruimte berekent moet worden. */
   margin: 10px auto;
   padding: 10px;
+}
+
+.green-border {
+  border: 1px solid lightseagreen;
 }
 
 nav {
