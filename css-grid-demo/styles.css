@@ -1,0 +1,45 @@
+.parent {
+  background-color: blue;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+header {
+  background-color: purple;
+  margin: 10px;
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+main {
+  background-color: lightcoral;
+  margin: 10px;
+  grid-area: 2 / 1 / 4 / 1;
+}
+
+footer {
+  background-color: green;
+  margin: 10px;
+  grid-area: 4 / 1 / 4 / 1;
+}
+
+@media (min-width: 600px) {
+  .parent {
+    background-color: lightskyblue;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  header {
+    background-color: lightgreen;
+    grid-column: 1 / -1;
+  }
+  main {
+    background-color: darksalmon;
+    grid-area: 2 / 1 / 4 / 2;
+  }
+  footer {
+    background-color: tomato;
+    grid-area: 2 / 2 / 4 / 3;
+  }
+}

@@ -1,0 +1,87 @@
+/* Grid Definitions */
+.parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 200px 100px 1fr 1fr 100px;
+  grid-template-areas:
+    ". header ."
+    ". nav ."
+    ". main ."
+    ". aside ."
+    ". footer .";
+}
+/* Grid areas  */
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+@media (min-width: 600px) {
+  .parent {
+    grid-template-columns: 10px 300px 1fr 10px;
+    grid-template-rows: 200px 100px 1fr 100px;
+    grid-template-areas:
+      ". header header ."
+      ". nav nav ."
+      ". main aside ."
+      ". footer footer .";
+  }
+}
+
+/* Other styling  */
+body {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
+  background-color: lightcyan;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header,
+main,
+footer,
+aside,
+nav {
+  border: 1px solid lightseagreen;
+  margin: 10px;
+  padding: 10px;
+}
+
+nav {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 18px;
+}
+.navigation-links {
+  padding-left: 0;
+}
+
+.navigation-links li {
+  display: inline;
+  margin: 10px;
+}
+
+input,
+select,
+textarea {
+  line-height: 25px;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: 1px solid grey;
+}

@@ -1,16 +1,16 @@
 /* body {
-  color: red;
-}
+  background-color: red;
+} */
 
-.black-border {
-  border: 5px solid black;
-}
+/* .red-border {
+  border: 5px solid red;
+} */
 
 #green-background {
   background-color: green;
-} */
+}
 
-body {
+/* body {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter",
     "Lucida Typewriter", monospace;
   background-color: lightcyan;
@@ -31,4 +31,4 @@ nav {
   background-color: lightseagreen;
   color: white;
   font-size: 18px;
-}
+} */
