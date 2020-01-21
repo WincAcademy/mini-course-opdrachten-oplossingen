@@ -79,21 +79,45 @@ footer {
   grid-area: 7 / 1 / 8 / 8;
 }
 
-@media (max-width: 600px) {
+.parent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 100px 1fr 1fr 1fr 1fr 100px;
+}
+header {
+  grid-area: 1 / 1 / 1 / 1;
+}
+nav {
+  grid-area: 2 / 1 / 2 / 1;
+}
+main {
+  grid-area: 3 / 1 / 5 / 1;
+}
+aside {
+  grid-area: 5 / 1 / 7 / 1;
+}
+
+@media (min-width: 600px) {
   .parent {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
+  /* Grid areas  */
   header {
-    grid-area: 1 / 1 / 1 / 1;
+    grid-area: 1 / 1 / 3 / 6;
   }
   nav {
-    grid-area: 2 / 1 / 2 / 1;
+    grid-area: 3 / 1 / 4 / 6;
   }
   main {
-    grid-area: 3 / 1 / 5 / 1;
+    grid-area: 4 / 1 / 7 / 4;
   }
   aside {
-    grid-area: 5 / 1 / 7 / 1;
+    grid-area: 4 / 4 / 7 / 6;
+  }
+  footer {
+    grid-area: 7 / 1 / 8 / 8;
   }
 }
