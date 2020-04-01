@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Stuur je recept op:</h1></header>
+    <main>
+      <form name="contact" method="POST" data-netlify="true">
+        <!-- <form action="results.html" method="GET" enctype="multipart/form-data"> -->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" min="1" max="200" step="5" />
+        </div>
+        <div>
+          <label for="date">Birthdate</label>
+          <input type="date" name="date" id="date" min="2019-06-10" />
+        </div>
+        <hr />
+
+        <div>
+          Gender
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male" />
+          </div>
+          <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female" />
+          </div>
+        </div>
+        <hr />
+        <div>
+          Favorite Cuisine
+          <div>
+            <label for="italian">Italian</label>
+            <input type="checkbox" name="italian" id="italian" />
+          </div>
+          <div>
+            <label for="french">French</label>
+            <input type="checkbox" name="french" id="french" />
+          </div>
+          <div>
+            <label for="spanish">Spanish</label>
+            <input type="checkbox" name="spanish" id="spanish" />
+          </div>
+          <div>
+            <label for="arabic">Arabic</label>
+            <input type="checkbox" name="arabic" id="arabic" />
+          </div>
+        </div>
+        <hr />
+
+        <div>
+          <label for="color">Favoriete kleur van je schort</label>
+          <input type="color" name="color" id="color" />
+        </div>
+
+        <hr />
+
+        <div>
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio"></textarea>
+        </div>
+        <input type="hidden" name="hidden" value="hi" />
+        <div>
+          <label for="file">File</label>
+          <input id="file" type="file" name="file" />
+        </div>
+
+        <div>
+          <label for="url">URL</label>
+          <input type="url" name="url" id="url" />
+        </div>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
