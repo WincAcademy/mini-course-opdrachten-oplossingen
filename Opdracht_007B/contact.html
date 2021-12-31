@@ -12,82 +12,82 @@
   </header>
   <main>
     <form name="contact" method="POST" data-netlify="true">
-      <!-- <form action="results.html" method="GET" enctype="multipart/form-data"> -->
       <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required />
+        <label>Name</label>
+        <input type="text" name="name" required />
+        <!-- The property required in <input> is not mandatory but we wanted to show it as bonus -->
       </div>
       <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
+        <label>Email</label>
+        <input type="email" name="email" required />
       </div>
       <div>
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" />
+        <label>Phone</label>
+        <input type="tel" name="phone" />
       </div>
       <div>
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" min="1" max="200" step="5" />
+        <label>Age</label>
+        <input type="number" name="age" min="1" max="200" />
       </div>
       <div>
-        <label for="date">Birthdate</label>
-        <input type="date" name="date" id="date" min="1960-06-10" />
+        <label>Birthdate</label>
+        <input type="date" name="date" min="1900-06-10" />
       </div>
       <hr />
 
       <div>
         Gender
         <div>
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" value="male" />
+          <label>Male</label>
+          <input type="radio" name="gender" value="male" />
         </div>
         <div>
-          <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" value="female" />
+          <label>Female</label>
+          <input type="radio" name="gender" value="female" />
         </div>
       </div>
       <hr />
       <div>
         Favorite Cuisine
         <div>
-          <label for="italian">Italian</label>
-          <input type="checkbox" name="italian" id="italian" />
+          <label>Italian</label>
+          <input type="checkbox" name="italian" />
         </div>
         <div>
-          <label for="french">French</label>
-          <input type="checkbox" name="french" id="french" />
+          <label>French</label>
+          <input type="checkbox" name="french" />
         </div>
         <div>
-          <label for="spanish">Spanish</label>
-          <input type="checkbox" name="spanish" id="spanish" />
+          <label>Spanish</label>
+          <input type="checkbox" name="spanish" />
         </div>
         <div>
-          <label for="arabic">Arabic</label>
-          <input type="checkbox" name="arabic" id="arabic" />
+          <label>Arabic</label>
+          <input type="checkbox" name="arabic" />
         </div>
       </div>
       <hr />
 
       <div>
-        <label for="color">Favorite color of your cooking apron</label>
-        <input type="color" name="color" id="color" />
+        <label>Favorite color of your cooking apron</label>
+        <input type="color" name="color" />
       </div>
 
       <hr />
 
       <div>
-        <label for="bio">Bio</label>
-        <textarea id="bio" name="bio"></textarea>
+        <label>Bio</label>
+        <textarea name="bio"></textarea>
       </div>
       <input type="hidden" name="hidden" value="hi" />
       <div>
-        <label for="file">File</label>
-        <input id="file" type="file" name="file" />
+        <label>File</label>
+        <input type="file" name="file" />
       </div>
 
       <div>
-        <label for="url">URL</label>
-        <input type="url" name="url" id="url" />
+        <label>URL</label>
+        <input type="url" name="url" />
       </div>
 
       <button type="reset">Reset</button>
